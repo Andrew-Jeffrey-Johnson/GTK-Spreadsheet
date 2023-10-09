@@ -6,12 +6,12 @@
 				 values updates that column's bottom-row entry to be the
 				 sum of the column. Text is treated as 0 for the sum.
 				 The save button overwrites the file "output.csv" in the
-				 same subdirectory as the executable. It saves the '
+				 same subdirectory as the executable. It saves the
 				 contents of all entries in the grid.
 	Compile via make file:
 		make
 	Compile via g++:
-		g++ -std=c++11 main.cpp -o main $(pkg-config gtkmm-3.0 --cflags --libs)
+		g++ -std=c++11 spreadsheet.cpp -o spreadsheet $(pkg-config gtkmm-3.0 --cflags --libs)
 	GTK 3 and gtkmm required
 		
 */
