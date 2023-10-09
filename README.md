@@ -5,6 +5,14 @@ Creates a 10x11 grid of entries. Entering floating-point values updates that col
 
 The save button overwrites the file "output.csv" in the same subdirectory as the executable. It saves the contents of all entries in the grid.
 
+Run <code>make</code> to compile via makefile.
+  
+To compile via <code>g++</code>, enter this into the command-line:
+
+  <code>g++ -std=c++11 spreadsheet.cpp -o spreadsheet $(pkg-config gtkmm-3.0 --cflags --libs)</code>
+
+GTK 3 or 4 and gtkmm 3 required for compilation
+
 Example program usage:
 ![image](https://github.com/Andrew-Jeffrey-Johnson/GTK-Spreadsheet/assets/106950101/216e9d71-fbb9-4576-8a9c-0aa7c89499a1)
 
